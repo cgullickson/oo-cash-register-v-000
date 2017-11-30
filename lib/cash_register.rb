@@ -4,8 +4,10 @@ attr_accessor :total, :employee_discount, :title, :price
 
 @@items = []
 
- def initialize (total = 0)
+ def initialize (discount = 0)
    @total = total
+   @discount = discount
+   items = []
    @total = 0
  end
 
