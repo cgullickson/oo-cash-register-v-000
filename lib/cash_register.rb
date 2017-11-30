@@ -7,7 +7,5 @@ attr_accessor :total :employee_discount
    @employee_discount = employee_discount
  end
 
- def total 
-
 
 end
