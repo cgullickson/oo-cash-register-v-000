@@ -1,6 +1,6 @@
 class CashRegister
 
-attr_accessor :total, :discount, :title, :price, :quantity
+attr_accessor :total, :discount, :title, :price, :quantity, :item
 
 @@items = []
 
@@ -17,12 +17,19 @@ attr_accessor :total, :discount, :title, :price, :quantity
 
  def add_item (title, price, quantity = 1)
    @total = @total + price*quantity
+   @item = price*quantity
+   
    @@items << title
  end
 
  def apply_discount
-     @total = @total*0.8
-     return "After the discount, the total comes to $#{@total.round}."
+  if 
+    @total = @total*0.8
+    return "After the discount, the total comes to $#{@total.round}."
+  else
+    
+  end
+     
 
  end
 
