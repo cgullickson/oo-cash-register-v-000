@@ -21,6 +21,7 @@ attr_accessor :total, :discount, :title, :price, :quantity
  end
 
  def apply_discount
+   if !discount == nil
    @total = @total*0.8
 
  end
