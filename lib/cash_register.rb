@@ -34,7 +34,7 @@ attr_accessor :total, :discount, :title, :price, :quantity, :item
  end
 
  def items
-   @@items
+   self.items
  end
 
  def void_last_transaction
