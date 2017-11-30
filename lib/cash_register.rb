@@ -22,10 +22,11 @@ attr_accessor :total, :discount, :title, :price, :quantity, :item
  end
 
  def apply_discount
-  if discount != 0
+  if @discount != 0
     @total = @total*0.8
     return "After the discount, the total comes to $#{@total.round}."
   else
+    return "There is no discount to apply."
 
   end
 
