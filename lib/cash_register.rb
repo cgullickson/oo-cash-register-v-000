@@ -17,7 +17,5 @@ attr_accessor :total, :employee_discount, :title, :price
    @total = @total + price
    items << title
  end
-   
- end
-   
+
 end
