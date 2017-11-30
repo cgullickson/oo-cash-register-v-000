@@ -21,7 +21,7 @@ attr_accessor :total, :discount, :title, :price, :quantity
  end
 
  def apply_discount
-   @total = @total*.8
+   @total = @total*0.8
 
  end
 
@@ -32,5 +32,5 @@ attr_accessor :total, :discount, :title, :price, :quantity
  def void_last_transaction
 
  end
- 
+
 end
