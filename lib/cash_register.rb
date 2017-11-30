@@ -7,8 +7,6 @@ attr_accessor :total, :employee_discount, :title, :price
  def initialize (total = 0, discount)
    @total = total
    @total = 0
-   @discount = discount
-   @discount = 0
  end
 
  def total
