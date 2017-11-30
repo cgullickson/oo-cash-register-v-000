@@ -15,7 +15,7 @@ attr_accessor :total, :employee_discount, :title, :price
 
  def add_item (title, price)
    @total = @total + price
-   items << title
+   @@items << title
  end
 
 end
