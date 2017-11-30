@@ -20,4 +20,8 @@ attr_accessor :total, :discount, :title, :price, :quantity
    @@items << title
  end
 
+ def items 
+   @@items
+ end
+ 
 end
