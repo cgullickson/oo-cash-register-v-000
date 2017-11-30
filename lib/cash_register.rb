@@ -38,8 +38,8 @@ attr_accessor :total, :discount, :title, :price, :quantity, :item
  end
 
  def void_last_transaction
-   total = @total - @item
-   return total
+   @total = @total - @item
+   return @total
  end
 
 end
